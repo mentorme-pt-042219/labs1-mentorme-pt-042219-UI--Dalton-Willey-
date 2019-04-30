@@ -1,0 +1,23 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color:  #4696e5;
+}
+.cardHolder{
+    display: flex; 
+    justify-content: space-around;
+    flex-flow: row;
+    padding: 12px; 
+    margin: 12px; 
+}
+.teamCard{
+    border: 4px solid black; 
+    margin: 12px; 
+    /* background-color:  #66a2df; */
+}
+img{
+    width: 25%; 
+    height: 25%; 
+    border-radius: 50%; 
+}
