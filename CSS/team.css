@@ -3,6 +3,7 @@
 }
 body{
     background-color:  #4696e5;
+    width: 100%;
 }
 .cardHolder{
     display: flex; 
@@ -17,7 +18,22 @@ body{
     /* background-color:  #66a2df; */
 }
 img{
-    width: 25%; 
-    height: 25%; 
+    width: 33%; 
+    height: 33%; 
     border-radius: 50%; 
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.cardHeader{
+    border-bottom: 4px solid black;
+    display: flex; 
+    justify-content: center; 
+}
+.cardImage{
+  display: flex;
+  justify-content: center;   
+  border-bottom: 4px solid black; 
+}
+.cardText{
+    padding: 12px;
 }
