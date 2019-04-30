@@ -7,18 +7,17 @@ img{
      display: flex; 
      flex-direction: column;
      padding-right: 12px; 
-     justify-content: center; 
+     justify-content: flex-end; 
  }
  .rowContainer{
      display: flex; 
      flex-direction: row;
-     justify-content: space-around 
- 
+     justify-content: space-around; 
  }
  nav{
      display: flex;
      justify-content: space-evenly; 
-     padding-top: 24px; 
+     padding-top: 4em; 
  }
  nav a {
      text-decoration: none; 
@@ -38,3 +37,9 @@ img{
  button:hover{
   background-color: white; 
  }
+h1 span{
+    color: white; 
+}
+h3 span{
+    color: white; 
+}
