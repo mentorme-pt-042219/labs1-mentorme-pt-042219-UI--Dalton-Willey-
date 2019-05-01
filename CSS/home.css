@@ -21,10 +21,14 @@ img{
  }
  nav a {
      text-decoration: none; 
+     font-size: 1.5em; 
+ }
+ nav a:visited{
+     color: black; 
  }
  nav a:hover{
-     color: white; 
- }
+    color: white; 
+}
  button{ 
      background-color: Transparent;
      background-repeat:no-repeat;

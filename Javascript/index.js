@@ -27,3 +27,7 @@ const testimonials = [
     Business: 'Hardware Heroes',
 },
     ]
+
+// const DisplayArray (testimonials){
+
+// }

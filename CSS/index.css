@@ -2,7 +2,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    width: 100%;
+    width: 98%;
     background-color: #4696e5; 
     /* background-image: linear-gradient(to top left, #4696e5, white ); */
+}
+h1{
+    font-size: 4em; 
+}
+h3{
+    font-size: 2em; 
 }

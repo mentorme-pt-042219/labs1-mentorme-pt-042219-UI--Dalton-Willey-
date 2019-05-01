@@ -13,7 +13,7 @@ body{
     margin: 12px; 
 }
 .teamCard{
-    border: 4px solid black; 
+    border: 2px solid #b3cbf2; 
     margin: 12px; 
     /* background-color:  #66a2df; */
 }
@@ -25,14 +25,16 @@ img{
     padding-bottom: 12px;
 }
 .cardHeader{
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid #b3cbf2;
     display: flex; 
     justify-content: center; 
+    color: white; 
+    font-weight: bold; 
 }
 .cardImage{
   display: flex;
   justify-content: center;   
-  border-bottom: 4px solid black; 
+  border-bottom: 2px solid #b3cbf2; 
 }
 .cardText{
     padding: 12px;
