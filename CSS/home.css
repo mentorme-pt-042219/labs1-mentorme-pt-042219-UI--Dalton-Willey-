@@ -32,7 +32,7 @@ img{
     color: white; 
     font-size: 2em;
 }
- button{ 
+ .signUp{ 
      background-color: Transparent;
      background-repeat:no-repeat;
      border: none;
@@ -43,7 +43,7 @@ img{
      font-size: 1.5em;
      font-weight: bold;  
  }
- button:hover{
+ .signUp:hover{
   background-color: white; 
  
  }
@@ -54,8 +54,8 @@ h3 span{
     color: white; 
 }
 .wrapper {
-    height: 200px;
-    width: 632px;
+    height: 400px;
+    width: 675px;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
@@ -63,7 +63,7 @@ h3 span{
     display: flex; 
     justify-content: space-around;
   }
-  .button-wrapper {
+.button-wrapper {
     width: 100%;
     height: 100%;
     display: flex;
@@ -72,7 +72,7 @@ h3 span{
     position: absolute;
   }
   
-  .carousel {
+.carousel {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -83,13 +83,14 @@ h3 span{
     transition: all 1s ease;
   }
   
-  .card {
-    background-color: white;
-    min-width: 200px;
-    height: 200px;
+.card {
+    background-color: 4696e5;
+    min-width: 190px;
+    height: 300px;
     margin-right: 1rem;
     display: inline-block;
-    color: #4696e5;  
+    color: white; 
+    border: 12px solid black; 
   }
 .type{
     overflow: hidden; 
@@ -101,7 +102,34 @@ h3 span{
         typing 4s steps(30, end),
         blink-caret 1s step-end infinite
 }
-
+.carouselImage{
+    width: 35%;
+    display: flex; 
+    justify-content: center;
+    margin: 0 auto; 
+    padding: 0; 
+}
+.happyUser{
+   margin: 0;
+   display: flex; 
+   justify-content: center;
+}
+.businessName{
+    display: flex;
+    justify-content: center;
+    margin: 0; 
+}
+.boxQuote{
+    display: flex; 
+    justify-content: center; 
+    margin: 12px;
+}
+.slider{
+   opacity: .2;  
+}
+.slider:hover{ 
+    opacity: 1;
+}
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
