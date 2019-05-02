@@ -7,17 +7,19 @@ img{
      display: flex; 
      flex-direction: column;
      padding-right: 12px; 
-     justify-content: flex-end; 
+     justify-content: space-around;
+     text-align: center; 
  }
- .rowContainer{
+ /* .rowContainer{
      display: flex; 
      flex-direction: row;
      justify-content: space-around; 
- }
+ } */
  nav{
      display: flex;
      justify-content: space-evenly; 
      padding-top: 4em; 
+     padding-bottom: 2em; 
  }
  nav a {
      text-decoration: none; 
@@ -57,6 +59,9 @@ h3 span{
     position: relative;
     overflow: hidden;
     margin: 0 auto;
+    margin-bottom: 12px; 
+    display: flex; 
+    justify-content: space-around;
   }
   .button-wrapper {
     width: 100%;
@@ -74,17 +79,17 @@ h3 span{
     width: 100%;
     display: flex;
     position: absolute;
-    left: 0;
+    /* left: 0; */
     transition: all 1s ease;
   }
   
   .card {
-    background: black;
+    background-color: white;
     min-width: 200px;
     height: 200px;
     margin-right: 1rem;
     display: inline-block;
-    color: white; 
+    color: #4696e5;  
   }
 .type{
     overflow: hidden; 
