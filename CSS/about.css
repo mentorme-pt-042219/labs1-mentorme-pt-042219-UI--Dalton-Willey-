@@ -1,6 +1,27 @@
 hr{
     border-top: 1px solid white; 
 }
-.container{
+.accordion{
     padding-top: 12px; 
+    width: 75%; 
+
+}
+.accordionTitle{
+    margin: 0; 
+    padding: 0 10px; 
+    background-color: white; 
+    border-bottom: 1px solid black; 
+    cursor: pointer;
+}
+.accordionTitle--active{
+    background-color: yellow;
+}
+.accordionDescription{
+    max-height: 0; 
+    overflow: hidden; 
+    transition: all 0.3s linear; 
+    opacity: 0; 
+}
+.accordionDescription--visible{
+    opacity: 1; 
 }
