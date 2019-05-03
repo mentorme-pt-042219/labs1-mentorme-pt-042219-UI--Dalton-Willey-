@@ -1,26 +1,33 @@
-hr{
-    border-top: 1px solid white; 
+h1{
+    margin: 0; 
 }
 .accordion{
     padding-top: 12px; 
     width: 75%; 
-
+}
+.accordionItem{
+    margin-bottom:32px;
 }
 .accordionTitle{
     margin: 0; 
     padding: 0 10px; 
     background-color: white; 
-    border-bottom: 1px solid black; 
-    cursor: pointer;
+     cursor: pointer;
+    border-radius: 10px
 }
 .accordionTitle--active{
-    background-color: yellow;
+    background-color: white;
+    border-radius: 10px 10px 0 0; 
+
 }
 .accordionDescription{
+    padding: 16px;
     max-height: 0; 
     overflow: hidden; 
     transition: all 0.3s linear; 
     opacity: 0; 
+    background-color: white; 
+    border-radius: 0 0 10px 10px; 
 }
 .accordionDescription--visible{
     opacity: 1; 
