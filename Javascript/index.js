@@ -32,19 +32,20 @@
 
 
 //accordion 
+ (function(){
 
-function  accordion () {
   const accordion = document.querySelector('.accordion');
-  const accordionTitles = accordion.querySelectorAll('accordionTitle');
+  const accordionTitles = document.querySelectorAll('.accordionTitle');
 
-  [].forEach(accordionTitles, function(accordionTitle){
-    accordeonTitle.addEventListener('click', function() {
+  // console.log(accordionTitles);
+  [].forEach.call(accordionTitles, function(accordionTitle){
+    accordionTitle.addEventListener('click', function() {
       const activeTitle = accordion.querySelector('.accordionTitle--active');
-      const activeDescript = accordion.querySelector('accordionDescription.accordionDescription--visible');
-      const clickedDescription = accordionTitle.parentElement.querySelector('accordionDescription');
+      const activeDescript = accordion.querySelector('.accordionDescription.accordionDescription--visible');
+      const clickedDescription = accordionTitle.parentElement.querySelector('.accordionDescription');
 
-      if(activeDescript){
-        activeDescript.classList.remove('accordionTitle--active');
+      if(activeTitle){
+        activeTitle.classList.remove('accordionTitle--active');
       }
       accordionTitle.classList.toggle('accordionTitle--active');
 
@@ -52,11 +53,9 @@ function  accordion () {
         activeDescript.classList.remove('accordionDescription--visible');
         activeDescript.style.maxHeight = null; 
       }
-
+      
       clickedDescription.classList.toggle('accordionDescription--visible');
-      clickedDescription.style.maxHeight = clickedDescription.scrollHeigh + "px";
+      clickedDescription.style.maxHeight = `${clickedDescription.scrollHeight}px`
     });
   });
-};
-
-accordion();
+})();
