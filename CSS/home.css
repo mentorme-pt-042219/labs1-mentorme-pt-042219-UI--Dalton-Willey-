@@ -19,7 +19,7 @@ img{
      display: flex;
      justify-content: space-evenly; 
      padding-top: 4em; 
-     padding-bottom: 2em; 
+     padding-bottom: 100px;  
  }
  nav a {
      text-decoration: none; 
@@ -70,6 +70,7 @@ h3 span{
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    margin-top: 24px; 
   }
   
 .carousel {
@@ -96,7 +97,7 @@ h3 span{
     border-right: .15em solid blue; 
     white-space: pre; 
     margin: 0 auto; 
-    /* letter-spacing: .15em;  */
+    letter-spacing: .10em; 
     animation: 
         typing 4s steps(30, end),
         blink-caret 1s step-end infinite
@@ -126,9 +127,17 @@ h3 span{
 }
 .slider{
    opacity: .2;  
+   background: none; 
+   border: none;
+   height: 2em; 
+   border-radius: 36px; 
 }
 .slider:hover{ 
     opacity: 1;
+    background-color: white; 
+}
+.slider img{
+    height: 24px;
 }
 @keyframes typing {
     from { width: 0 }
