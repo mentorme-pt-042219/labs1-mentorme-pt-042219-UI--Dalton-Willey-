@@ -39,3 +39,15 @@ img{
 .cardText{
     padding: 12px;
 }
+
+/* Phone query */
+
+@media screen and (max-width: 600px){
+   .cardHolder{
+    display: flex; 
+    flex-flow: column; 
+   }
+   .teamCard{
+       margin-bottom: 24px;
+   }
+}

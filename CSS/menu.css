@@ -1,7 +1,9 @@
 .navBar{
     display: flex; 
     flex-direction: row; 
-    justify-content: space-between
+    justify-content: space-between;
+    margin: 24px; 
+    font-size: 1.5em; 
 }
 li a{
     text-decoration: none; 
@@ -13,10 +15,11 @@ li{
     display: block;
     transition-duration: 0.5s;
     text-decoration: none; 
+    padding-left: 0; 
 }
 li:hover{
     cursor: pointer; 
-    
+    font-size: 1.75em;  
 }
 ul li ul {
     visibility: hidden; 
@@ -26,15 +29,20 @@ ul li ul {
     margin-top: 1 rem; 
     /* left: 0;  */
     display: none;
-    justify-content: left;
+    /* justify-content: left; */
 }
 ul li:hover > ul, 
 ul li ul:hover {
     visibility: visible; 
     opacity: 1; 
     display: block; 
+    margin: 0; 
+
 }
 ul li ul li {
     clear: both; 
     width: 100%; 
+}
+.dropdown{
+    padding: 0; 
 }
