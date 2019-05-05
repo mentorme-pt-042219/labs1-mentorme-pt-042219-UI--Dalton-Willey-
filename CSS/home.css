@@ -10,11 +10,9 @@ img{
      justify-content: space-around;
      text-align: center; 
  }
- /* .rowContainer{
-     display: flex; 
-     flex-direction: row;
-     justify-content: space-around; 
- } */
+ .columnContainer div h1 {
+     width: 50%;
+ }
  nav{
      display: flex;
      justify-content: space-evenly; 
@@ -45,7 +43,6 @@ img{
  }
  .signUp:hover{
   background-color: white; 
- 
  }
 h1 span{
     color: white; 
@@ -97,13 +94,12 @@ h3 span{
     border-right: .15em solid blue; 
     white-space: pre; 
     margin: 0 auto; 
-    letter-spacing: .10em; 
     animation: 
         typing 4s steps(30, end),
         blink-caret 1s step-end infinite
 }
 .carouselImage{
-    width: 35%;
+    width: 60%;
     display: flex; 
     justify-content: center;
     margin: 0 auto; 
@@ -114,16 +110,27 @@ h3 span{
    display: flex; 
    justify-content: center;
 }
+.happyUser h1{
+    margin: 0;
+}
 .businessName{
     display: flex;
     justify-content: center;
     margin: 0; 
-    height: 10%
+}
+.businessName h5{
+    margin: 0; 
+    font-size: 1.2em; 
 }
 .boxQuote{
     display: flex; 
     justify-content: center; 
     margin: 12px;
+    padding: 12px;
+}
+.boxQuote p{
+    margin: 0; 
+    text-align: center;
 }
 .slider{
    opacity: .2;  
@@ -139,6 +146,9 @@ h3 span{
 .slider img{
     height: 24px;
 }
+
+/* MentorMe animation */
+
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
