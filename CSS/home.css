@@ -74,6 +74,12 @@ h3 span{
     position: absolute;
     margin-top: 24px; 
   }
+  button a{
+      text-decoration: none; 
+  }
+  button a:visited{
+      color: black; 
+  }
 .carousel {
     margin: 0;
     padding: 0;
