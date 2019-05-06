@@ -46,3 +46,11 @@ ul li ul li {
 .dropdown{
     padding: 0; 
 }
+@media screen and (max-width: 600px){
+    .navBar{
+        display: flex; 
+        flex-direction: column; 
+        margin-left: 0; 
+        padding: 0; 
+    }
+ }

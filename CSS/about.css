@@ -1,12 +1,22 @@
+body{
+    background-color: #4696e5; 
+    font-family: 'Montserrat', sans-serif;
+}
 h1{
     margin: 0; 
 }
 .accordion{
     padding-top: 12px; 
     width: 75%; 
+    display: flex; 
+    justify-content: center; 
+    margin: 0 auto;
+    padding: 12px; 
 }
 .accordionItem{
-    margin-bottom:32px;
+   margin-bottom: 36px;
+   margin-left: 12px;
+   margin-right: 12px; 
 }
 .accordionTitle{
     margin: 0; 
