@@ -33,15 +33,15 @@ img{
 }
 .cardImage{
   display: flex;
-  justify-content: center;   
-  border-bottom: 2px solid #b3cbf2; 
+  justify-content: center; 
+  width: 200px;   
 }
 .cardText{
-    padding: 12px;
+    margin: 24px; 
+    height: 33%; 
+    margin: 12px; 
 }
-
 /* Phone query */
-
 @media screen and (max-width: 600px){
    .cardHolder{
     display: flex; 
@@ -50,4 +50,25 @@ img{
    .teamCard{
        margin-bottom: 24px;
    }
+   .cardImage{
+       width: 100%; 
+   }
+   .cardText{
+       padding: 36px; 
+   }
+}
+
+/* Tablet Query */
+@media (min-width: 601px) and (max-width: 1000px){
+    .cardHolder{
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-around;
+    } 
+    .cardImage{
+        width: 100%; 
+    }
+    .cardText{
+        padding: 24px; 
+    }
 }
