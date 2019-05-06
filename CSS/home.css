@@ -1,3 +1,8 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #4696e5;
+    width: 100%; 
+}
 img{
     width: 45%; 
     height: 45%; 
@@ -69,7 +74,6 @@ h3 span{
     position: absolute;
     margin-top: 24px; 
   }
-  
 .carousel {
     margin: 0;
     padding: 0;
@@ -80,7 +84,6 @@ h3 span{
     /* left: 0; */
     transition: all 1s ease;
   }
-  
 .card {
     background-color: 4696e5;
     min-width: 215px;
@@ -92,7 +95,6 @@ h3 span{
 .type{
     overflow: hidden; 
     border-right: .15em solid blue; 
-    white-space: pre; 
     margin: 0 auto; 
     animation: 
         typing 4s steps(30, end),
@@ -157,4 +159,16 @@ h3 span{
 @keyframes blink-caret {
     from, to { border-color: transparent }
     30% { border-color: blue; }
+}
+/* media query */
+@media screen and (max-width: 600px){
+    .type{
+        width: 100%; 
+    }
+    .columnContainer div h1{
+        width: 100%;
+    }
+    .carousel{
+       display: none;
+    }
 }
