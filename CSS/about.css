@@ -27,7 +27,7 @@ h1{
 }
 .accordionTitle--active{
     background-color: white;
-    border-radius: 10px 10px 0 0; 
+    border-radius: 24px 24px 0 0; 
 
 }
 .accordionDescription{
@@ -41,4 +41,18 @@ h1{
 }
 .accordionDescription--visible{
     opacity: 1; 
+}
+.socialMedia{
+    display: flex; 
+    justify-content: space-between; 
+    margin: 36px 60px; 
+}
+
+@media screen and (max-width: 600px){
+    .accordion{
+        display: flex;
+        flex-flow: column;
+        margin-left: 0px; 
+        padding: 0px; 
+    }
 }
