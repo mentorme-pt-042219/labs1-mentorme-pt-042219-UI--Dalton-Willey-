@@ -1,0 +1,180 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #4696e5;
+    width: 100%; 
+}
+img{
+    width: 45%; 
+    height: 45%; 
+    border-radius: 100%; 
+ }
+ .columnContainer{
+     display: flex; 
+     flex-direction: column;
+     padding-right: 12px; 
+     justify-content: space-around;
+     text-align: center; 
+ }
+ .columnContainer div h1 {
+     width: 50%;
+ }
+ nav{
+     display: flex;
+     justify-content: space-evenly; 
+     padding-top: 4em; 
+     padding-bottom: 100px;  
+ }
+ nav a {
+     text-decoration: none; 
+     font-size: 1.5em; 
+ }
+ nav a:visited{
+     color: black; 
+ }
+ nav a:hover{
+    color: white; 
+    font-size: 2em;
+}
+ .signUp{ 
+     background-color: Transparent;
+     background-repeat:no-repeat;
+     border: none;
+     cursor:pointer;
+     overflow: hidden;      
+     border-radius: 12px; 
+     padding: 12px; 
+     font-size: 1.5em;
+     font-weight: bold;  
+ }
+ .signUp:hover{
+  background-color: white; 
+ }
+h1 span{
+    color: white; 
+}
+h3 span{
+    color: white; 
+}
+.wrapper {
+    height: 400px;
+    width: 675px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 12px; 
+    display: flex; 
+    justify-content: space-around;
+  }
+.button-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-top: 24px; 
+  }
+  button a{
+      text-decoration: none; 
+  }
+  button a:visited{
+      color: black; 
+  }
+.carousel {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    /* left: 0; */
+    transition: all 1s ease;
+  }
+.card {
+    background-color: 4696e5;
+    min-width: 215px;
+    height: 300px;
+    margin-right: 1rem;
+    display: inline-block;
+    color: white; 
+  }
+.type{
+    overflow: hidden; 
+    border-right: .15em solid blue; 
+    margin: 0 auto; 
+    animation: 
+        typing 4s steps(30, end),
+        blink-caret 1s step-end infinite
+}
+.carouselImage{
+    width: 60%;
+    display: flex; 
+    justify-content: center;
+    margin: 0 auto; 
+    padding: 0; 
+}
+.happyUser{
+   margin: 0;
+   display: flex; 
+   justify-content: center;
+}
+.happyUser h1{
+    margin: 0;
+}
+.businessName{
+    display: flex;
+    justify-content: center;
+    margin: 0; 
+}
+.businessName h5{
+    margin: 0; 
+    font-size: 1.2em; 
+}
+.boxQuote{
+    display: flex; 
+    justify-content: center; 
+    margin: 12px;
+    padding: 12px;
+}
+.boxQuote p{
+    margin: 0; 
+    text-align: center;
+}
+.slider{
+   opacity: .2;  
+   background: none; 
+   border: none;
+   height: 2em; 
+   border-radius: 36px; 
+}
+.slider:hover{ 
+    opacity: 1;
+    background-color: white; 
+}
+.slider img{
+    height: 24px;
+}
+
+/* MentorMe animation */
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    30% { border-color: blue; }
+}
+/* media query */
+@media screen and (max-width: 600px){
+    .type{
+        width: 100%; 
+    }
+    .columnContainer div h1{
+        width: 100%;
+    }
+    .carousel{
+       display: none;
+    }
+}

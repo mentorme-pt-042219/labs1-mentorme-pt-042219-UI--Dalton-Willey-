@@ -1,0 +1,74 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color:  #4696e5;
+    width: 100%;
+}
+.cardHolder{
+    display: flex; 
+    justify-content: space-around;
+    flex-flow: row;
+    padding: 12px; 
+    margin: 12px; 
+}
+.teamCard{
+    border: 2px solid #b3cbf2; 
+    margin: 12px; 
+    /* background-color:  #66a2df; */
+}
+img{
+    width: 33%; 
+    height: 33%; 
+    border-radius: 50%; 
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.cardHeader{
+    border-bottom: 2px solid #b3cbf2;
+    display: flex; 
+    justify-content: center; 
+    color: white; 
+    font-weight: bold; 
+}
+.cardImage{
+  display: flex;
+  justify-content: center; 
+  width: 200px;   
+}
+.cardText{
+    margin: 24px; 
+    height: 33%; 
+    margin: 12px; 
+}
+/* Phone query */
+@media screen and (max-width: 600px){
+   .cardHolder{
+    display: flex; 
+    flex-flow: column; 
+   }
+   .teamCard{
+       margin-bottom: 24px;
+   }
+   .cardImage{
+       width: 100%; 
+   }
+   .cardText{
+       padding: 36px; 
+   }
+}
+
+/* Tablet Query */
+@media (min-width: 601px) and (max-width: 1000px){
+    .cardHolder{
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-around;
+    } 
+    .cardImage{
+        width: 100%; 
+    }
+    .cardText{
+        padding: 24px; 
+    }
+}

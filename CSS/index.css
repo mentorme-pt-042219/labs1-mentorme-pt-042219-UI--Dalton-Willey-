@@ -1,9 +1,14 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 body{
-    width: 100%;
+    width: 98%;
+    /* background-color: #4696e5;  */
+    /* background-image: linear-gradient(to top left, #4696e5, white ); */
 }
-img{
-    width: 100%; 
+h1{
+    font-size: 4em; 
 }
-.container{
-    display: flex; 
+h3{
+    font-size: 2em; 
 }
